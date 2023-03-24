@@ -7,22 +7,14 @@ header{
  
 }
 main{
-    background-image: url(/static/asset/image/imageback1.svg);
+    background-image: url(/shool-arabic/static/asset/image/imageback1.svg);
     display: flex;
     flex-wrap: wrap;
-}
-
-
-
-input{
-    
-    background-color:white;
-    display: flex;
-    justify-content: end;
+    padding: 100px;
+    width: auto;
     left: auto;
-    display: grid;
-    
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -37,16 +29,12 @@ nav img{
     display: flex;
     justify-content: center;
 }
-
-    
 section{
     width: 50vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
 }
-
-
 footer{
    
     background-color: #c87311a9;

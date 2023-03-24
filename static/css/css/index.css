@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    background-color: white;
+ 
+ 
+}
+main{
+    background-image: url(/shool-arabic/static/asset/image/imageback1.svg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    margin: 20px 0;
+    width: 275px;
+}
+#imageBanner{
+    width: 100vw;
+    background-color: #c87311a9;
+    display: flex;
+    justify-content: center;
+}
+
+    
+section{
+    width: 50vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+footer{
+   
+    background-color: #c87311a9;
+    display: flex;
+    justify-content: end;
+}
