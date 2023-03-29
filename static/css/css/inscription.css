@@ -1,55 +1,101 @@
 *{
-    margin:0;
-    padding: 0;
+    
+    box-sizing: border-box;
+    
+}
+:root{
+    --color-first:#1ec36dd9;
+    --color-second:#f0f0f0;
+    --color-whit:#fff;
+    --color-succes:#2ecc71;
+    --color-error:#e74c3C;
+
+}
+
+body{
+    display: flex;
+    font-family: "open sabs" sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #ee8d1ebd;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+   
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0, 0,.5);
+    width:400px;
+    max-width: 100%;
 }
 header{
-    background-color: white;
- 
+    background:#f7f7f7 ;
+    border-bottom:1px solid var(--color-second);
+    padding: 20PX 40PX;
 }
-main{
-    background-image: url(/shool-arabic/static/asset/image/imageback1.svg);
-    display: flex;
-    flex-wrap: wrap;
+header h2{
+    margin: 0;
+    text-align: center;
+    font-style: italic;
 }
-
-
-
-input{
-    
-    background-color:white;
-    display: flex;
-    justify-content: end;
-    left: auto;
-    display: grid;
-    
+form{
+    padding: 30PX 40PX ;
 }
-nav{
-    display: flex;
-    align-items: center;
+.form-control{
+    padding-bottom: 10PX;
+    margin-bottom: 20PX;
+    position: relative;
 }
-nav img{
-    margin: 20px 0;
-    width: 275px;
+.form-control input{
+    display:2px solid var(--color-second);
+    border-radius: 4PX;
+    display: block;
+    font-family: inherit;
+    font-size: 14PX;
+    width: 100%;
+    height: 40PX;
+    padding-left: 10PX;
 }
-#imageBanner{
-    width: 100vw;
-    background-color: #c87311a9;
-    display: flex;
-    justify-content: center;
+.form-control i{
+    position: absolute;
+    top: 33PX;
+    right: 10PX;
+    /*visibility: hidden */
 }
-
-    
-section{
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*visibility: hidden;*/
 }
-
-
-footer{
-   
-    background-color: #c87311a9;
-    display: flex;
-    justify-content: end;
+.form button{
+    background: #ee8d1ebd ;
+    border: 2PX solid var(--color-first);
+    color: var(--color-whit);
+    display: block;
+    font-family: inherit;
+    border-radius: 4PX ;
+    padding: 10PX;
+    font-size: 16PX;
+    width: 100%;
+}
+.form-control.success input{
+    border-color:var(--color-succes);
+}
+.form-control.erro input{
+    background-color: var(--color-error);
+}
+.form-control.form-control.success i.check-circle{
+    color: var(--color-succes);
+    visibility: visible;
+}
+.form-control.erro i.fa-exclamation{
+    color: var(--color-error);
+    visibility: visible;
+}
+.form-control.erro small{
+    color: var(--color-error);
+    visibility: visible;
 }

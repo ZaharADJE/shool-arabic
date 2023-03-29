@@ -1,43 +1,59 @@
 *{
-    margin:0;
-    padding: 0;
+    
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    font-family: "open sabs" sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #ee8d1ebd;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+   
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0, 0,.5);
+    width:400px;
+    max-width: 100%;
 }
 header{
-    background-color: white;
- 
+    background:#f7f7f7 ;
+    border-bottom:1px solid var(--color-second);
+    padding: 20PX 40PX;
 }
-main{
-    background-image: url(/shool-arabic/static/asset/image/imageback1.svg);
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-    width: auto;
-    left: auto;
+header h2{
+    margin: 0;
+    text-align: center;
+    font-style: italic;
 }
-
-nav{
-    display: flex;
-    align-items: center;
+.form-control i{
+    position: absolute;
+    top: 33PX;
+    right: 10PX;
+    /*visibility: hidden */
 }
-nav img{
-    margin: 20px 0;
-    width: 275px;
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*visibility: hidden;*/
 }
-#imageBanner{
-    width: 100vw;
-    background-color: #c87311a9;
-    display: flex;
-    justify-content: center;
+.form button{
+    background: #ee8d1ebd ;
+    border: 2PX solid var(--color-first);
+    color: var(--color-whit);
+    display: block;
+    font-family: inherit;
+    border-radius: 4PX ;
+    padding: 10PX;
+    font-size: 16PX;
+    width: 100%;
 }
-section{
-    width: 50vw;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-}
-footer{
-   
-    background-color: #c87311a9;
-    display: flex;
-    justify-content: end;
+.form-control.success input{
+    border-color:var(--color-succes);
 }

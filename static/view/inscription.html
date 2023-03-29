@@ -6,62 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/shool-arabic/static/css/css/inscription.css">
     <script src="https://kit.fontawesome.com/b8a61be976.js" crossorigin="anonymous"></script>
+   
     <title>apprendre arabe</title>
 </head>
 <body>
-    <header>
-        <nav class="entete">
-            <img src="/shool-arabic/static/asset/logo/logo.svg" alt="Logo arabe">
-            <ul>
-                <a href="index.html"><i class="fa-solid fa-house-chimney"></i></i>Accueil</a> 
-                <a href="se connecter.html"> se connecter</a>
-                <a href="inscription"> inscription</a>                 
-            </ul>
-        </nav>
-    
-        <input type="text" id="champ recherche" name="kj246">
-        
-        <div id="imageBanner">
-            <img src="/shool-arabic/static/asset/image/calligraphie_langue_arabe.png" alt="calligraphie_langue_arabe">
+   <div class="container">
+        <div class="header">
+            <h1>Créer un commpte</h1>
         </div>
-    </header>
-    <main>
-        <section>
+        <form class="form">
+            <div class="form-control">
+                <label for="">Nom d'utilisateur</label>
+                <input type="text" id="usename"placeholder="Ronasdev">
+                <i class="fa-sharp fa-light fa-check"></i>
+                <i class="fa-sharp fa-light fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="">Email</label>
+                <input type="Email" id="Email"placeholder="ronasdev@gmail.com">
+                <i class="fa-sharp fa-light fa-exclamation"></i>
+                <i class="fa-sharp fa-check-circle"></i>
+                <small>Message d'erreur</small>
                 
-            <label for="prénom et nom">prénom et nom</label>
-            <input type="text" id="prénom et nom" name="kj246">
-            
-        </section>
-        <section>
-                
-            <label for="Numéro de téléphone protable ou adresse e-mail">Mot de passe </label>
-            <input type="text" id="Mot de passe" name="kj246">
-           
-        </section>
-        <section>
-                
-            <label for="Créer un mot de passe">Créer un mot de passe </label>
-            <input type="text" id="Créer un mot de passe " name="kj246">
-           
-        </section>
-        <section>
-                
-            <label for="Afficher le mot de passe">Afficher le mot de passe</label>
-            <input type="text" id="Afficher le mot de passe" name="kj246">
-           
-        </section>
-
-
-        <button id ="VALIDER">VALIDER</button>
-
-    </main>  
-    <footer>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        
-    </footer> 
-
+            </div>
+            <div class="form-control">
+                <label for="">Mot de passe</label>
+                <input type="Mot de passe" id="Mot de passel"placeholder="Ronasdev">
+                <i class="fa-sharp fa-light fa-check"></i>
+                <i class="fa-sharp fa-light fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <div class="form-control">
+                <label for="">Confirmation du mot de passe</label>
+                <input type="password" id="passwoed2"placeholder="Ronasdev">
+                <i class="fa-sharp fa-light fa-check"></i>
+                <i class="fa-sharp fa-light fa-exclamation"></i>
+                <small>Message d'erreur</small>
+            </div>
+            <button type="submit"><i class="fas fa user-plus"></i>S'inscrire</button>
+        </form>   
+    </div>   
+   <script src="inscription.js"></script>  
 </body>
 </html>

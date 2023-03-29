@@ -1,57 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/shool-arabic/static/css/css/se connecter.css">
-    <script src="https://kit.fontawesome.com/b8a61be976.js" crossorigin="anonymous"></script>
-    <title>apprendre arabe</title>
-</head>
-<body>
-    <header>
-        <nav class="entete">
-            <img src="/shool-arabic/static/asset/logo/logo.svg" alt="Logo arabe">
-            
-            <ul>
-                <a href="index.html"><i class="fa-solid fa-house-chimney"></i></i> Accueil a</a> 
-                <a href="se connecter.html"> se connecter</a>
-                <a href="inscription"> inscription</a>                 
-            </ul>
-        </nav>
-
-            
-            <input type="text" id="champ recherche" name="kj246">
-            
-            <div id="imageBanner">
-                <img src="/shool-arabic/static/asset/image/calligraphie_langue_arabe.png" alt="calligraphie_langue_arabe">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/shool-arabic/static/css/css/inscription.css">
+        <script src="https://kit.fontawesome.com/b8a61be976.js" crossorigin="anonymous"></script>
+        <title>apprendre arabe</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>connecter</h1>
             </div>
+            <form class="form">
+                <div class="form-control">
+                    <label for="">Email</label>
+                    <input type="Email" id="Email"placeholder="ronasdev@gmail.com">
+                    <small>email oubilee</small>
+                </div>
+                <div class="form-control">
+                    <label for=""> mot de passe</label>
+                    <input type="password" id="passwoed2"placeholder="Ronasdev">
+                    <small>Mot de passe oubilée</small>
+                </div>
+                <button type="submit"><i class="fas fa user-plus"></i>container</button>
+            </form>
+        </div>
 
-    </header>
-    <main>
-        <section>
-                
-            <label for="Adresse mail ou numéro de telepone">Adresse e-mail ou numéro de téléphone</label>
-            <input type="text" id="Adresse mail ou numéro de telepone" name="kj246">
-            <p>adresse e-mail oubilée</p>
-        </section>
-        <section>
-                
-            <label for="Mot de passe ?">Mot de passe </label>
-            <input type="text" id="Mot de passe" name="kj246">
-            <p>Mot de passe  oubilée</p>
-        </section>
-
-        <button id ="SE CONNECTER">SE CONNECTER</button>
-
-    </main>
-    <footer>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        
-    </footer>
-    
-</body>
+        <script src="se connecter.js"></script>  
+    </body>
 </html>
