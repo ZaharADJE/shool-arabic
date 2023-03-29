@@ -8,7 +8,7 @@ header{
     background-color:#FFFF;
 }
 main{padding: 50PX;
-    background-image: url(/static/asset/image/imageback1.svg);
+    background-image: url(/asset/image/imageback1.svg);
     display: flex;
     flex-wrap: wrap;
 }
@@ -45,7 +45,7 @@ a{  padding-left: 40PX ;
 }
 section{
     width: 400PX;
-    display:block
+    display:block;
     justify-content:center;
     align-items:center;
 }
