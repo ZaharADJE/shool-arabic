@@ -1,8 +1,8 @@
 const form =document.querySelector('#form');
-const username = document.querySelector('username');
-const email = document.querySelector('uemail');
-const passeword = document.querySelector('passeword');
-const passwoed2 = document.querySelector('passwoed2 ');
+const username = document.querySelector('#username');
+const email = document.querySelector('#email');
+const passeword = document.querySelector('#passeword');
+const password2 = document.querySelector('#password2 ');
 //evenement
 form.addEventListener('click', e=>{
      e.preventDefault();
@@ -36,7 +36,7 @@ function form_verify(){
 }
 function setError(elem,message){
     const formControl = elem.parentElement;
-    const smal = formControl.querySelector('small');
+    const small = formControl.querySelector('small');
     small.innerText = message
     formControl.className = "form-control error";
 
