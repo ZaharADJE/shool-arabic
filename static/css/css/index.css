@@ -8,9 +8,9 @@ header{
     background-color:#FFFF;
 }
 main{
-    padding: 50PX;
     background-image: url(/static/asset/image/imageback1.svg);
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -18,7 +18,6 @@ div{
     padding: 20px;
     width: 5OPX;
     font-size: 2.5rem;
-    
 }
 
 
@@ -46,8 +45,11 @@ a{  padding-left: 40PX ;
 
 }
 section{
-    width: 400PX;
-    display:block;
+    width: 50vw;
+    padding-bottom: 50PX;
+    padding-top: 50PX;
+    display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
 }
