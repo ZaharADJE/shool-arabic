@@ -1,4 +1,4 @@
-const form =document.getElementById('form');
+const form = document.getElementById('form');
 const button = document.getElementById('register');
 const username = document.getElementById('username');
 const email = document.getElementById('Email');
@@ -8,7 +8,7 @@ const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk0Nzg1NjgsImV4cC
 
 function form_verify(){
    
-  if(username.value.length < 3 && password.value === "" && email.value.match(/^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/) && password.vlue === password2.value ){
+  if(username.value.length < 3 && password.value === "" && email.value.match(/^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/) && password.value === password2.value ){
       alert("l'un ou plusieurs des champs sont vides ou incomplet")
       
   
@@ -35,7 +35,7 @@ fetch('https://afpatraining.snage.tech/signup', {
   .then((response) => response.json())
   .then((response) => {
     console.log(response)
-    document.location.href="se connecter.html";
+    // document.location.href="se connecter.html";
   })
   .catch((error) => {
     console.error("Error:", error);
