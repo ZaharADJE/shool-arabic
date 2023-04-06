@@ -6,7 +6,7 @@ const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk0Nzg1NjgsImV4cC
 function form_verify(){
    alert(password.value)
     if(password.value === "" && email.value.match(/^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/) ){
-      //je cherche à récupérer des email avec @ + 
+      
         alert("l'un ou plusieurs des champs sont vides ou incomplet")
         
     
